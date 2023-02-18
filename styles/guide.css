@@ -18,9 +18,16 @@
 }
 
 .guide__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .guide__item {
@@ -94,10 +101,18 @@
   }
 
   .guide__list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 24px 51px;
   }
 
@@ -138,9 +153,14 @@
   }
 
   .guide__list {
-    flex-wrap: nowrap;
-    align-items: start;
-    justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 0;
   }
 
@@ -170,7 +190,9 @@
 
   .guide__item:nth-child(even)::after {
     top: 45px;
-    transform: rotate(-168.57deg);
+    -webkit-transform: rotate(-168.57deg);
+        -ms-transform: rotate(-168.57deg);
+            transform: rotate(-168.57deg);
   }
 
   .guide__subtitle {

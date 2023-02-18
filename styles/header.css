@@ -4,14 +4,22 @@
 }
 
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: none;
 }
 
 .header__button {
   color: var(--gold);
+  -webkit-transition: color 0.1s;
+  -o-transition: color 0.1s;
   transition: color 0.1s;
 }
 
@@ -53,6 +61,8 @@
   }
 
   .header__button_phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 12px;
   }

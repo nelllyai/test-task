@@ -4,7 +4,8 @@
 
 .logo_white {
   height: 55px;
-  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 @media (min-width: 768px) {

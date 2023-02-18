@@ -1,0 +1,144 @@
+.form {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+  padding-top: 56px;
+  z-index: 2;
+  background-color: inherit;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__title {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.form__title::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  left: -46px;
+  width: 130px;
+  height: 76px;
+  background-image: url("../img/form-element.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  gap: 22px;
+}
+
+.form__label:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form__label:last-child {
+  margin-bottom: 7px;
+}
+
+.form__input {
+  padding: 10px;
+  height: 35px;
+  border: 0.5px solid var(--light-gold);
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form__warning {
+  margin-bottom: 64px;
+  align-self: start;
+  font-family: 'Garamond';
+  font-size: 10px;
+  line-height: 11px;
+  color: var(--dark-green);
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding: 64px 49px;
+    top: calc(50% - 256px);
+    left: calc(50% - 303px);
+    bottom: auto;
+    right: auto;
+    width: 606px;
+  }
+
+  .form__title {
+    margin-bottom: 59px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .form__title::before {
+    top: -36px;
+    width: 155px;
+    height: 90px;
+  }
+
+  .form__label {
+    font-size: 16px;
+    line-height: 19px;
+    gap: 10px;
+  }
+
+  .form__label:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .form__label:last-child {
+    margin-bottom: 10px;
+  }
+
+  .form__warning {
+    margin-bottom: 42px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: 1720px) {
+  .form {
+    padding: 64px 113px;
+    top: calc(50% - 259px);
+    left: calc(50% - 373px);
+    width: 746px;
+  }
+
+  .form__title {
+    margin-bottom: 48px;
+    font-size: 42px;
+    line-height: 47px;
+  }
+
+  .form__title::before {
+    top: -28px;
+    left: -42px;
+  }
+
+  .form__label {
+    font-size: 18px;
+    line-height: 22px;
+    gap: 11px;
+  }
+
+  .form__warning {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

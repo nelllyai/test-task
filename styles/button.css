@@ -1,0 +1,13 @@
+.button {
+  padding: 18px 41px;
+  background-color: var(--dark-green);
+  font-family: 'Garamond';
+  font-size: 20px;
+  line-height: 22px;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--light-green);
+}

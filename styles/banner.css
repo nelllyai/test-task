@@ -1,0 +1,121 @@
+.banner {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner__title {
+  margin-bottom: 16px;
+}
+
+.banner__description {
+  margin-bottom: 32px;
+  max-width: 206px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.banner__social {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-top: 57.5px;
+    padding-bottom: 55px;
+  }
+
+  .banner__container {
+    position: relative;
+  }
+
+  .banner__container::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 50px;
+    width: 252px;
+    height: 160px;
+    background-image: url("../img/background-element.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .banner__description {
+    max-width: 344px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1720px) {
+  .banner {
+    padding-top: 22px;
+    padding-bottom: 88px;
+  }
+
+  .banner__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner__container::before {
+    top: 0px;
+    left: 300px;
+    width: 356px;
+    height: 210px;
+  }
+
+  .banner__content {
+    display: block;
+  }
+
+  .banner__title {
+    padding-top: 85px;
+    margin-bottom: 32px;
+  }
+
+  .banner__description {
+    margin-bottom: 64px;
+    max-width: 570px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: left;
+  }
+
+  .banner__social {
+    display: flex;
+    align-items: end;
+    gap: 37px;
+  }
+
+  .banner__image {
+    max-height: 460px;
+  }
+
+  .banner__icon:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .banner__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--light-gold);
+    border-radius: 100%;
+    color: var(--light-gold);
+    transition: all 0.3s;
+  }
+
+  .banner__link:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+}

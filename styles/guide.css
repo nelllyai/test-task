@@ -1,187 +1,118 @@
 .guide {
-  padding-top: 40px;
-  padding-bottom: 51px;
+  padding-top: 4rem;
+  padding-bottom: 5.1rem;
 }
 
 .guide__title {
-  position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
-.guide__title::before {
+.guide__title_border {
+  position: relative;
+}
+
+.guide__title_border::before {
   content: "";
   position: absolute;
-  top: -8px;
-  left: 35px;
-  width: 42px;
+  top: -0.8rem;
+  left: 0;
+  width: 4.2rem;
   border-top: 2px solid var(--light-gold);
-}
-
-.guide__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .guide__item {
   position: relative;
-  padding-top: 50px;
-  max-width: 125px;
+  max-width: 12.5rem;
 }
 
 .guide__item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
-.guide__item::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: calc(50% - 20px);
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.guide__item_order::before {
-  background-image: url("../img/icons/order.png");
-}
-
-.guide__item_details::before {
-  background-image: url("../img/icons/details.png");
-}
-
-.guide__item_pay::before {
-  background-image: url("../img/icons/pay.png");
-}
-
-.guide__item_packaging::before {
-  background-image: url("../img/icons/packaging.png");
-}
-
-.guide__item_delivery::before {
-  background-image: url("../img/icons/delivery.png");
+.guide__icon {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .guide__subtitle {
-  margin-bottom: 8px;
-  font-family: 'Garamond';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-}
-
-.guide__description {
-  text-align: center;
+  margin-bottom: 0.8rem;
 }
 
 @media (min-width: 768px) {
   .guide {
-    padding-top: 55px;
-    padding-bottom: 69px;
+    padding-top: 5.5rem;
+    padding-bottom: 6.9rem;
   }
 
   .guide__title {
-    margin-bottom: 67px;
+    margin-bottom: 6.7rem;
   }
 
-  .guide__title::before {
-    left: 160px;
-    width: 52px;
+  .guide__title_border::before {
+    width: 5.2rem;
   }
 
   .guide__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 24px 51px;
+    gap: 2.4rem 5.1rem;
   }
 
   .guide__item {
-    padding-top: 82px;
-    max-width: 140px;
+    max-width: 14rem;
   }
 
   .guide__item:not(:last-child) {
     margin-bottom: 0;
   }
 
-  .guide__item::before {
-    left: calc(50% - 25px);
-    width: 50px;
-    height: 50px;
+  .guide__icon {
+    margin-bottom: 3.2rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   .guide__subtitle {
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 1rem;
   }
 }
 
-@media (min-width: 1720px) {
+@media (min-width: 1160px) {
   .guide {
-    padding-top: 88px;
-    padding-bottom: 24px;
+    padding-top: 8.8rem;
+    padding-bottom: 2.4rem;
   }
 
   .guide__title {
-    margin-bottom: 64px;
+    margin-bottom: 6.4rem;
   }
 
-  .guide__title::before {
-    left: calc(50% - 225px);
-    width: 62px;
+  .guide__title_border::before {
+    width: 6.2rem;
   }
 
   .guide__list {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     gap: 0;
   }
 
   .guide__item {
-    padding-top: 118px;
-    max-width: 176px;
+    max-width: 17.6rem;
   }
 
-  .guide__item::before {
-    left: 10px;
-    width: 60px;
-    height: 60px;
+  .guide__icon {
+    margin: 0;
+    margin-bottom: 5.8rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   .guide__item:not(:last-child)::after {
     content: "";
     position: absolute;
-    top: -15px;
-    right: -50px;
-    width: 146px;
-    height: 33px;
+    top: -1.5rem;
+    right: -5rem;
+    width: 14.6rem;
+    height: 3.3rem;
     background-image: url("../img/list-element.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -196,12 +127,6 @@
   }
 
   .guide__subtitle {
-    margin-bottom: 24px;
-    font-size: 23px;
-    text-align: left;
-  }
-
-  .guide__description {
-    text-align: left;
+    margin-bottom: 2.4rem;
   }
 }

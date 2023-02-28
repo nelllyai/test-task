@@ -14,71 +14,78 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
+
   <header class="header">
-    <div class="container header__container">
-      <button class="header__button header__button_menu">
+    <div class="container header__container flex jc-sb ai-center">
+      <button class="header__button header__button_menu d-block-t d-none-d header__button_menu--js">
         <svg class="header__svg header__svg_menu" viewBox="0 0 23 13" fill="currentColor"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1H22M1 6.5H11.5H22M1 12H22" stroke="#B8926B" stroke-width="2" stroke-linecap="round" />
         </svg>
       </button>
 
-      <img class="logo header__logo" src="img/logo.png" alt="Логотип компании Wild Flowers">
+      <a class="header__logo" href="/">
+        <img src="img/logo.png" alt="Логотип компании Wild Flowers">
+      </a>
 
-      <div class="menu">
-        <button class="close close_menu">
+      <div class="header__menu flex p-fixed p-static-d d-block-d header__menu--js">
+        <button class="header__close header__close_menu--js">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L13 13M1 13L13 1" stroke="#F6F6F5" stroke-width="1.5" stroke-linecap="round" />
           </svg>
         </button>
 
-        <img class="logo logo_white menu__logo" src="img/logo.png" alt="Логотип компании Wild Flowers">
+        <a class="header__logo header__logo_white" href="/">
+          <img src="img/logo.png" alt="Логотип компании Wild Flowers">
+        </a>
 
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="/">Букеты</a>
+        <nav>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link ff-Garamond fz-14 fz-16-t lh-19-t fz-20-d lh-22-d" href="javascript:void(0)">Букеты</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="/">Отзывы</a>
+            <li class="header__item">
+              <a class="header__link ff-Garamond fz-14 fz-16-t lh-19-t fz-20-d lh-22-d" href="javascript:void(0)">Отзывы</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="/">Доставка и оплата</a>
+            <li class="header__item">
+              <a class="header__link ff-Garamond fz-14 fz-16-t lh-19-t fz-20-d lh-22-d" href="javascript:void(0)">Доставка и оплата</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="/">Контакты</a>
+            <li class="header__item">
+              <a class="header__link ff-Garamond fz-14 fz-16-t lh-19-t fz-20-d lh-22-d" href="javascript:void(0)">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="menu__media">
-          <li class="menu__icon">
-            <a href="http://twitter.com/" class="menu__link">
-              <svg class="menu__svg" viewBox="0 0 24 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <ul class="header__media flex d-none-d">
+          <li>
+            <a href="http://twitter.com/" class="header__social flex ai-center jc-center">
+              <svg class="header__svg" viewBox="0 0 24 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.831403 17.1047C3.32182 17.3287 5.56588 16.7016 7.60838 15.1697C5.47182 14.9816 4.04297 13.9156 3.24567 11.9179C3.94442 12.003 4.59838 12.0254 5.29265 11.8372C2.99036 11.1206 1.76307 9.61557 1.59734 7.18786C2.28713 7.51036 2.93661 7.74327 3.70255 7.75223C2.3364 6.7265 1.63765 5.39619 1.66453 3.72098C1.67797 2.95056 1.88401 2.22494 2.29161 1.53963C4.82234 4.50036 7.99807 6.13973 11.9084 6.41296C11.886 6.24275 11.8726 6.10838 11.8546 5.96952C11.5321 3.48806 13.1446 1.23057 15.6082 0.760253C17.1535 0.464628 18.5196 0.872232 19.6753 1.93827C19.8544 2.09952 20.0067 2.13536 20.2307 2.07713C21.131 1.84869 21.9865 1.51723 22.8152 1.06932C22.4971 2.11744 21.8432 2.90577 20.9563 3.56869C21.1579 3.53286 21.3639 3.50598 21.5655 3.46567C21.776 3.42088 21.9865 3.37161 22.197 3.31338C22.3986 3.25963 22.5957 3.19692 22.7928 3.12973C22.9943 3.06254 23.1959 2.9864 23.4333 2.94609C23.3168 3.10734 23.2048 3.27754 23.0794 3.43431C22.5598 4.09275 21.9596 4.67056 21.3012 5.18567C21.234 5.23942 21.1758 5.35588 21.1803 5.4365C21.2161 7.02661 20.9921 8.5764 20.477 10.0814C19.4647 13.0466 17.6999 15.4474 15.0528 17.163C13.7448 18.0095 12.316 18.5649 10.7886 18.8874C9.27463 19.2055 7.75172 19.2637 6.22432 19.0845C4.69245 18.9054 3.23672 18.453 1.86609 17.7453C1.50328 17.5616 1.1539 17.3556 0.800049 17.1585C0.813486 17.1406 0.822445 17.1226 0.831403 17.1047Z" />
               </svg>
             </a>
           </li>
-          <li class="menu__icon">
-            <a href="https://ru.pinterest.com/" class="menu__link">
-              <svg class="menu__svg" viewBox="0 0 18 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <li>
+            <a href="https://ru.pinterest.com/" class="header__social flex ai-center jc-center">
+              <svg class="header__svg" viewBox="0 0 18 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.45547 0.533401C3.30254 0.533401 0.199951 4.96833 0.199951 8.66656C0.199951 10.9058 1.04332 12.8981 2.85204 13.6406C3.14855 13.7624 3.41435 13.6443 3.50032 13.3146C3.56014 13.0862 3.70176 12.5097 3.76492 12.2698C3.85161 11.9433 3.81799 11.8287 3.57868 11.5441C3.05715 10.9256 2.72382 10.125 2.72382 8.99094C2.72382 5.70065 5.17255 2.75528 9.10013 2.75528C12.5779 2.75528 14.4886 4.89159 14.4886 7.74465C14.4886 11.4986 12.836 14.667 10.3828 14.667C9.02789 14.667 8.01379 13.5405 8.3388 12.1591C8.72816 10.5097 9.48222 8.72973 9.48222 7.53912C9.48222 6.47347 8.9132 5.58458 7.7355 5.58458C6.35051 5.58458 5.23789 7.02501 5.23789 8.95452C5.23789 10.1834 5.65101 11.0147 5.65101 11.0147C5.65101 11.0147 4.23374 17.0519 3.98523 18.1092C3.49035 20.2148 3.91075 22.7961 3.94649 23.0568C3.96729 23.2113 4.16479 23.248 4.2541 23.1312C4.38188 22.9635 6.03152 20.9163 6.59229 18.8707C6.75098 18.2915 7.50336 15.292 7.50336 15.292C7.95325 16.1548 9.26829 16.9148 10.6667 16.9148C14.83 16.9148 17.6545 13.0992 17.6545 7.99195C17.6544 4.12993 14.4007 0.533325 9.45547 0.533325V0.533401Z" />
               </svg>
             </a>
           </li>
-          <li class="menu__icon">
-            <a href="https://www.youtube.com/" class="menu__link">
-              <svg class="menu__svg" viewBox="0 0 24 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <li>
+            <a href="https://www.youtube.com/" class="header__social flex ai-center jc-center">
+              <svg class="header__svg" viewBox="0 0 24 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12.2776 15.929C9.73059 15.8487 7.30849 15.7863 4.88638 15.6926C4.36449 15.6703 3.83368 15.59 3.32518 15.4696C2.37061 15.2466 1.71044 14.6711 1.37143 13.73C1.09934 12.9717 1.00121 12.191 0.929836 11.3971C0.773715 9.53253 0.773715 7.668 0.849545 5.80347C0.894151 4.75077 0.920915 3.68915 1.20193 2.66767C1.37143 2.05657 1.57662 1.45885 2.07175 1.01725C2.59364 0.548891 3.20474 0.267874 3.90059 0.236649C5.80973 0.142977 7.7144 0.0270016 9.62354 0.00915917C12.1928 -0.0176044 14.7666 0.0180805 17.3359 0.0671471C18.4466 0.08945 19.5662 0.147438 20.668 0.290177C21.6761 0.423995 22.4299 0.98603 22.8314 1.96736C23.1391 2.7212 23.2551 3.51073 23.322 4.31363C23.496 6.32536 23.5004 8.33709 23.4023 10.3488C23.3532 11.3703 23.3042 12.3962 23.0142 13.3909C22.6842 14.5329 21.9838 15.2867 20.8152 15.5454C20.3602 15.6435 19.8874 15.6792 19.4235 15.6971C16.9969 15.7818 14.5748 15.8577 12.2776 15.929ZM9.81088 10.8573C11.8449 9.80463 13.8566 8.76085 15.9085 7.69477C13.8611 6.62422 11.8494 5.57598 9.81088 4.5099C9.81088 6.6376 9.81088 8.72962 9.81088 10.8573Z" />
               </svg>
             </a>
           </li>
-          <li class="menu__icon">
-            <a href="http://facebook.com/" class="menu__link">
-              <svg class="menu__svg" viewBox="0 0 12 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <li>
+            <a href="http://facebook.com/" class="header__social flex ai-center jc-center">
+              <svg class="header__svg" viewBox="0 0 12 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M2.95344 4.92756C2.95344 5.4966 2.95344 8.04673 2.95344 8.04673H0.666748V11.8614H2.95344V23.2H7.648V11.8614H10.7988C10.7988 11.8614 11.0938 10.0331 11.2361 8.03092C10.8251 8.03092 7.6638 8.03092 7.6638 8.03092C7.6638 8.03092 7.6638 5.81273 7.6638 5.42283C7.6638 5.03294 8.17488 4.50605 8.68069 4.50605C9.18651 4.50605 10.2508 4.50605 11.2414 4.50605C11.2414 3.98443 11.2414 2.19302 11.2414 0.533325C9.92415 0.533325 8.42252 0.533325 7.76391 0.533325C2.83752 0.538594 2.95344 4.35852 2.95344 4.92756Z" />
               </svg>
@@ -87,63 +94,70 @@
         </ul>
       </div>
 
-      <a class="header__button header__button_phone" href="tel:+79602102233">
+      <a class="header__button header__button_phone d-block-t flex-t" href="tel:+79602102233">
         <svg class="header__svg header__svg_phone" viewBox="0 0 20 20" fill="currentColor"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M19.4755 14.678L16.6786 11.8869C15.6797 10.8901 13.9816 11.2889 13.582 12.5847C13.2823 13.4818 12.2834 13.9802 11.3844 13.7808C9.38661 13.2824 6.68957 10.6907 6.19012 8.59745C5.89045 7.70029 6.48979 6.70348 7.3888 6.40448C8.68738 6.00576 9.08694 4.31119 8.08804 3.31438L5.2911 0.523323C4.49198 -0.174441 3.2933 -0.174441 2.59406 0.523323L0.696144 2.41725C-1.20177 4.41087 0.895924 9.69394 5.59078 14.3789C10.2856 19.0639 15.5798 21.2569 17.5776 19.2633L19.4755 17.3693C20.1748 16.5719 20.1748 15.3757 19.4755 14.678Z" />
         </svg>
 
-        <p class="header__phone">+7 (960) 210-22-33</p>
+        <p class="ff-Garamond fz-18-t lh-20-t fz-20-d lh-22-d d-none d-block-t">+7 (960) 210-22-33</p>
       </a>
     </div>
   </header>
 
-  <main class="main">
-    <section class="banner">
-      <div class="container banner__container">
-        <div class="banner__content">
-          <h1 class="title banner__title">Цветы для самых любимых</h1>
+  <!-- MAIN -->
 
-          <p class="banner__description">
+  <main>
+
+    <!-- BANNER SECTION -->
+
+    <section class="banner">
+      <div class="container banner__container p-relative-t flex-d jc-sb-d">
+        <div class="banner__content flex fd-column ai-center d-block-d">
+          <h1 class="banner__title ff-Garamond fw-400 fz-25 lh-28 fz-42-t lh-47-t fz-59-d lh-66-d ta-left-d ta-center">Цветы для самых любимых</h1>
+
+          <p class="banner__description lh-20 fz-16-t lh-24-t fz-24-d lh-34-d ta-center ta-left-d">
             Каждый день мы создаем новую композицию из свежих, сезонных цветов
           </p>
 
-          <button class="button">Заказать сейчас</button>
+          <button class="banner__order p-18-41 bg-dark-green ff-Garamond fz-20 lh-22 c-white tr-03 banner__order--js">Заказать сейчас</button>
         </div>
 
-        <div class="banner__social">
-          <img class="banner__image" src="img/woman-with-flowers.png"
+        <div class="banner__social d-none flex-d ai-end-d">
+          <div class="banner__image">
+            <img class="banner__inside-image" src="img/woman-with-flowers.jpeg"
             alt="Красивая девушка с букетом белых цветов в руках">
+          </div>
 
           <ul class="banner__media">
             <li class="banner__icon">
-              <a href="http://twitter.com/" class="banner__link">
-                <svg width="24" height="20" viewBox="0 0 24 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <a href="http://twitter.com/" class="banner__link flex-d ai-center-d jc-center-d">
+                <svg class="banner__svg" viewBox="0 0 24 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.831403 17.1047C3.32182 17.3287 5.56588 16.7016 7.60838 15.1697C5.47182 14.9816 4.04297 13.9156 3.24567 11.9179C3.94442 12.003 4.59838 12.0254 5.29265 11.8372C2.99036 11.1206 1.76307 9.61557 1.59734 7.18786C2.28713 7.51036 2.93661 7.74327 3.70255 7.75223C2.3364 6.7265 1.63765 5.39619 1.66453 3.72098C1.67797 2.95056 1.88401 2.22494 2.29161 1.53963C4.82234 4.50036 7.99807 6.13973 11.9084 6.41296C11.886 6.24275 11.8726 6.10838 11.8546 5.96952C11.5321 3.48806 13.1446 1.23057 15.6082 0.760253C17.1535 0.464628 18.5196 0.872232 19.6753 1.93827C19.8544 2.09952 20.0067 2.13536 20.2307 2.07713C21.131 1.84869 21.9865 1.51723 22.8152 1.06932C22.4971 2.11744 21.8432 2.90577 20.9563 3.56869C21.1579 3.53286 21.3639 3.50598 21.5655 3.46567C21.776 3.42088 21.9865 3.37161 22.197 3.31338C22.3986 3.25963 22.5957 3.19692 22.7928 3.12973C22.9943 3.06254 23.1959 2.9864 23.4333 2.94609C23.3168 3.10734 23.2048 3.27754 23.0794 3.43431C22.5598 4.09275 21.9596 4.67056 21.3012 5.18567C21.234 5.23942 21.1758 5.35588 21.1803 5.4365C21.2161 7.02661 20.9921 8.5764 20.477 10.0814C19.4647 13.0466 17.6999 15.4474 15.0528 17.163C13.7448 18.0095 12.316 18.5649 10.7886 18.8874C9.27463 19.2055 7.75172 19.2637 6.22432 19.0845C4.69245 18.9054 3.23672 18.453 1.86609 17.7453C1.50328 17.5616 1.1539 17.3556 0.800049 17.1585C0.813486 17.1406 0.822445 17.1226 0.831403 17.1047Z" />
                 </svg>
               </a>
             </li>
             <li class="banner__icon">
-              <a href="https://ru.pinterest.com/" class="banner__link">
-                <svg width="18" height="24" viewBox="0 0 18 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://ru.pinterest.com/" class="banner__link flex-d ai-center-d jc-center-d">
+                <svg class="banner__svg" viewBox="0 0 18 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.45547 0.533401C3.30254 0.533401 0.199951 4.96833 0.199951 8.66656C0.199951 10.9058 1.04332 12.8981 2.85204 13.6406C3.14855 13.7624 3.41435 13.6443 3.50032 13.3146C3.56014 13.0862 3.70176 12.5097 3.76492 12.2698C3.85161 11.9433 3.81799 11.8287 3.57868 11.5441C3.05715 10.9256 2.72382 10.125 2.72382 8.99094C2.72382 5.70065 5.17255 2.75528 9.10013 2.75528C12.5779 2.75528 14.4886 4.89159 14.4886 7.74465C14.4886 11.4986 12.836 14.667 10.3828 14.667C9.02789 14.667 8.01379 13.5405 8.3388 12.1591C8.72816 10.5097 9.48222 8.72973 9.48222 7.53912C9.48222 6.47347 8.9132 5.58458 7.7355 5.58458C6.35051 5.58458 5.23789 7.02501 5.23789 8.95452C5.23789 10.1834 5.65101 11.0147 5.65101 11.0147C5.65101 11.0147 4.23374 17.0519 3.98523 18.1092C3.49035 20.2148 3.91075 22.7961 3.94649 23.0568C3.96729 23.2113 4.16479 23.248 4.2541 23.1312C4.38188 22.9635 6.03152 20.9163 6.59229 18.8707C6.75098 18.2915 7.50336 15.292 7.50336 15.292C7.95325 16.1548 9.26829 16.9148 10.6667 16.9148C14.83 16.9148 17.6545 13.0992 17.6545 7.99195C17.6544 4.12993 14.4007 0.533325 9.45547 0.533325V0.533401Z" />
                 </svg>
               </a>
             </li>
             <li class="banner__icon">
-              <a href="https://www.youtube.com/" class="banner__link">
-                <svg width="24" height="16" viewBox="0 0 24 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://www.youtube.com/" class="banner__link flex-d ai-center-d jc-center-d">
+                <svg class="banner__svg" viewBox="0 0 24 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.2776 15.929C9.73059 15.8487 7.30849 15.7863 4.88638 15.6926C4.36449 15.6703 3.83368 15.59 3.32518 15.4696C2.37061 15.2466 1.71044 14.6711 1.37143 13.73C1.09934 12.9717 1.00121 12.191 0.929836 11.3971C0.773715 9.53253 0.773715 7.668 0.849545 5.80347C0.894151 4.75077 0.920915 3.68915 1.20193 2.66767C1.37143 2.05657 1.57662 1.45885 2.07175 1.01725C2.59364 0.548891 3.20474 0.267874 3.90059 0.236649C5.80973 0.142977 7.7144 0.0270016 9.62354 0.00915917C12.1928 -0.0176044 14.7666 0.0180805 17.3359 0.0671471C18.4466 0.08945 19.5662 0.147438 20.668 0.290177C21.6761 0.423995 22.4299 0.98603 22.8314 1.96736C23.1391 2.7212 23.2551 3.51073 23.322 4.31363C23.496 6.32536 23.5004 8.33709 23.4023 10.3488C23.3532 11.3703 23.3042 12.3962 23.0142 13.3909C22.6842 14.5329 21.9838 15.2867 20.8152 15.5454C20.3602 15.6435 19.8874 15.6792 19.4235 15.6971C16.9969 15.7818 14.5748 15.8577 12.2776 15.929ZM9.81088 10.8573C11.8449 9.80463 13.8566 8.76085 15.9085 7.69477C13.8611 6.62422 11.8494 5.57598 9.81088 4.5099C9.81088 6.6376 9.81088 8.72962 9.81088 10.8573Z" />
                 </svg>
               </a>
             </li>
             <li class="banner__icon">
-              <a href="http://facebook.com/" class="banner__link">
-                <svg width="12" height="24" viewBox="0 0 12 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <a href="http://facebook.com/" class="banner__link flex-d ai-center-d jc-center-d">
+                <svg class="banner__svg" viewBox="0 0 12 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M2.95344 4.92756C2.95344 5.4966 2.95344 8.04673 2.95344 8.04673H0.666748V11.8614H2.95344V23.2H7.648V11.8614H10.7988C10.7988 11.8614 11.0938 10.0331 11.2361 8.03092C10.8251 8.03092 7.6638 8.03092 7.6638 8.03092C7.6638 8.03092 7.6638 5.81273 7.6638 5.42283C7.6638 5.03294 8.17488 4.50605 8.68069 4.50605C9.18651 4.50605 10.2508 4.50605 11.2414 4.50605C11.2414 3.98443 11.2414 2.19302 11.2414 0.533325C9.92415 0.533325 8.42252 0.533325 7.76391 0.533325C2.83752 0.538594 2.95344 4.35852 2.95344 4.92756Z" />
                 </svg>
@@ -154,67 +168,89 @@
       </div>
     </section>
 
+    <!-- GUIDE SECTION -->
     <section class="guide">
       <div class="container">
-        <h2 class="subtitle guide__title">5 шагов к авторскому букету</h2>
+        <h2 class="ff-Garamond fw-400 fz-20 lh-22 ta-center fz-32-t lh-36-t fz-40-d fz-45-d p-relative guide__title">
+          <span class="guide__title_border">5 шагов к авторскому букету</span>
+        </h2>
 
-        <ul class="guide__list">
+        <ul class="guide__list flex fd-column ai-center fd-row-t fw-wrap-t ai-start-t jc-center-t fw-nowrap-d ai-start-d jc-sb-d">
           <li class="guide__item guide__item_order">
-            <h3 class="guide__subtitle">Заказ</h3>
-            <p class="guide__description">Выберите букет и оформите заказ</p>
+            <div class="guide__icon">
+              <img src="/img/icons/order.png" alt="Иконка заказа">
+            </div>
+            <h3 class="guide__subtitle ff-Garamond fw-400 fz-16 lh-20 ta-center fz-18-t fz-23-d ta-left-d">Заказ</h3>
+            <p class="guide__description ta-center ta-left-d">Выберите букет и оформите заказ</p>
           </li>
 
           <li class="guide__item guide__item_details">
-            <h3 class="guide__subtitle">Детали</h3>
-            <p class="guide__description">Мы вам перезвоним в течение 10 минут и уточним детали</p>
+            <div class="guide__icon">
+              <img src="/img/icons/details.png" alt="Иконка деталей">
+            </div>
+            <h3 class="guide__subtitle ff-Garamond fw-400 fz-16 lh-20 ta-center fz-18-t fz-23-d ta-left-d">Детали</h3>
+            <p class="guide__description ta-center ta-left-d">Мы вам перезвоним в течение 10 минут и уточним детали</p>
           </li>
 
           <li class="guide__item guide__item_pay">
-            <h3 class="guide__subtitle">Оплата</h3>
-            <p class="guide__description">Оплатите онлайн или при получении</p>
+            <div class="guide__icon">
+              <img src="/img/icons/pay.png" alt="Иконка оплаты">
+            </div>
+            <h3 class="guide__subtitle ff-Garamond fw-400 fz-16 lh-20 ta-center fz-18-t fz-23-d ta-left-d">Оплата</h3>
+            <p class="guide__description ta-center ta-left-d">Оплатите онлайн или при получении</p>
           </li>
 
           <li class="guide__item guide__item_packaging">
-            <h3 class="guide__subtitle">Сборка и упаковка</h3>
-            <p class="guide__description">Собререм букет с учетом ваших пожеланий и упакуем для доставки</p>
+            <div class="guide__icon">
+              <img src="/img/icons/packaging.png" alt="Иконка сборки">
+            </div>
+            <h3 class="guide__subtitle ff-Garamond fw-400 fz-16 lh-20 ta-center fz-18-t fz-23-d ta-left-d">Сборка и упаковка</h3>
+            <p class="guide__description ta-center ta-left-d">Собререм букет с учетом ваших пожеланий и упакуем для доставки</p>
           </li>
 
           <li class="guide__item guide__item_delivery">
-            <h3 class="guide__subtitle">Доставка</h3>
-            <p class="guide__description">Курьер позвонит за час и доставит букет во время</p>
+            <div class="guide__icon">
+              <img src="/img/icons/delivery.png" alt="Иконка доставки">
+            </div>
+            <h3 class="guide__subtitle ff-Garamond fw-400 fz-16 lh-20 ta-center fz-18-t fz-23-d ta-left-d">Доставка</h3>
+            <p class="guide__description ta-center ta-left-d">Курьер позвонит за час и доставит букет во время</p>
           </li>
         </ul>
       </div>
     </section>
   </main>
 
-  <div class="overlay"></div>
+  <!-- OVERLAY -->
+  
+  <div class="overlay d-none p-fixed overlay--js"></div>
 
-  <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-    <button class="close close_form" type="button">
+  <!-- FORM -->
+
+  <form class="form p-fixed d-none form--js" action="#" method="post">
+    <button class="form__close form__close--js" type="button">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1L13 13M1 13L13 1" stroke="#69766D" stroke-width="1.5" stroke-linecap="round" />
       </svg>
     </button>
 
-    <div class="form__wrapper">
-      <h2 class="title form__title">Обратный звонок</h2>
+    <div class="flex fd-column ai-center">
+      <h2 class="ff-Garamond fw-400 fz-25 lh-28 ta-center fz-32-t lh-36-t fz-42-d lh-47-d ta-left-d p-relative form__title">Обратный звонок</h2>
 
-      <label class="form__label">
+      <label class="flex fd-column fz-14 lh-17 fz-16-t lh-19-t fz-18-d lh-22-d form__label">
         * Имя
-        <input class="form__input" type="text" name="customer" required>
+        <input class="fz-12 lh-14 form__input" type="text" name="customer" required>
       </label>
 
-      <label class="form__label">
+      <label class="flex fd-column fz-14 lh-17 fz-16-t lh-19-t fz-18-d lh-22-d form__label">
         * Телефон
-        <input class="form__input" type="tel" name="phone" required>
+        <input class="fz-12 lh-14 form__input" type="tel" name="phone" required>
       </label>
 
-      <p class="form__warning">
+      <p class="ff-Garamond c-dark-green form__warning fz-10 lh-11 fz-12-t lh-14-t fz-14-d lh-16-d">
         * Нажимая кнопку “Отправить заявку”, я даю согласие на обработку данных 
       </p>
 
-      <button class="button" type="submit">Отправить заявку</button>
+      <button class="p-18-41 bg-dark-green ff-Garamond fz-20 lh-22 c-white" type="submit">Отправить заявку</button>
     </div>
   </form>
 </body>

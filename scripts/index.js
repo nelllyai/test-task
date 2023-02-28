@@ -1,8 +1,8 @@
-const menu = $('.menu');
-const menuCloseBtn = $('.close_menu');
-const overlay = $('.overlay');
+const menu = $('.header__menu--js');
+const menuCloseBtn = $('.header__close_menu--js');
+const overlay = $('.overlay--js');
 
-$('.header__button_menu').on('click', function() {
+$('.header__button_menu--js').on('click', function() {
   overlay.fadeIn();
   menu.animate({
     top: 0,
@@ -12,14 +12,14 @@ $('.header__button_menu').on('click', function() {
   overlay.one('click', closeMenu);
 });
 
-const form = $('.form');
-const formCloseBtn = $('.close_form');
+const form = $('.form--js');
+const formCloseBtn = $('.form__close--js');
 
 form.on('submit', function(event) {
   event.preventDefault();
 });
 
-$('.button').on('click', function() {
+$('.banner__order--js').on('click', function() {
   overlay.fadeIn(100, function() {
     form.fadeIn('slow');
   });
@@ -32,7 +32,7 @@ $('.button').on('click', function() {
 function closeMenu() {
   overlay.fadeOut();
   menu.animate({
-    top: '-500px',
+    top: '-600px',
   });
 };
 
